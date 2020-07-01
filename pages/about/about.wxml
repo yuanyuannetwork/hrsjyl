@@ -1,0 +1,67 @@
+<scroll-view scroll-y class="scrollPage">
+  
+  <view class="page-section page-section-gap">
+    <map
+      id="myMap"
+      style="width: 100%; height: 300px;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      covers="{{covers}}"
+      show-location
+    ></map>
+  </view>
+  <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-link text-green"></text>
+        <text class="text-grey">官网</text>
+      </view>
+      <view class="action">
+        <a href="www.hrsjyl.com" >hrsjyl.com</a>
+      </view>
+    </view>
+    
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-phone text-green"></text>
+        <text class="text-grey">联系电话  </text>
+        <a href="wtai://wp/mc;15801072856">15801072856</a>
+      </view>
+      <view class="action">
+     
+        <button class="cu-btn round bg-green shadow">
+          <a href="wtai://wp/mc;15801072856"><text class="cuIcon-phone"></text> 呼叫</a> </button>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-weixin text-green"></text>
+        <text class="text-grey">联系微信</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">15801072856</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-mail text-green"></text>
+        <text class="text-grey">邮箱</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">hrsj@163.com</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-locationfill text-green"></text>
+        <text class="text-grey">地址</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">北京市昌平区平西王府</text>
+      </view>
+    </view>
+
+  </view>
+</scroll-view>
+  <view class="cu-tabbar-height"></view>

@@ -1,0 +1,49 @@
+<view class="cu-bar justify-center bg-white">
+    <view class="action sub-title">
+      <text class="text-xl text-bold text-blue">我司新闻</text>
+      <text class="text-ABC text-blue">news</text>
+      <!-- last-child选择器-->
+    </view>
+  </view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow" wx:for="{{list}}" wx:key>
+    <view class="title">
+      <view class="text-cut">{{item.title}}</view>
+    </view>
+    <view class="content">
+      <image src="{{item.img}}" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> {{item.neiron}}</view>
+        <view >
+          <view wx:for="{{item.tag}}" class="cu-tag {{item.color}} light sm round">{{item.neiron}}</view>
+          
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-bar justify-center bg-white">
+    <view class="action sub-title">
+      <text class="text-xl text-bold text-green">行业热点</text>
+      <text class="text-ABC text-blue">news</text>
+      <!-- last-child选择器-->
+    </view>
+  </view>
+  <view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow" wx:for="{{hylist}}" wx:key>
+    <view class="title">
+      <view class="text-cut">{{item.title}}</view>
+    </view>
+    <view class="content">
+      <image src="{{item.img}}" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> {{item.neiron}}</view>
+        <view >
+          <view wx:for="{{item.tag}}" class="cu-tag {{item.color}} light sm round">{{item.neiron}}</view>
+          
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-tabbar-height"></view>

@@ -1,0 +1,37 @@
+<cu-custom bgColor="bg-gradual-green">
+	<view slot="content">
+		<image src="../../images/logo.png" mode="widthFix"></image>
+	</view>
+</cu-custom>
+<shouye wx:if="{{PageCur=='shouye'}}"></shouye>
+<anli wx:if="{{PageCur=='anli'}}"></anli>
+<dontai wx:if="{{PageCur=='dontai'}}"></dontai>
+<about wx:if="{{PageCur=='about'}}"></about>
+
+
+<view class="cu-bar tabbar bg-white shadow foot">
+	<view class="action" bindtap="NavChange" data-cur="shouye">
+		<view class='cuIcon-cu-image'>
+			<text class="cuIcon-home lg {{PageCur=='shouye'?'text-green':'text-gray'}}"></text>
+		</view>
+		<view class="{{PageCur=='shouye'?'text-green':'text-gray'}}">首页</view>
+	</view>
+	<view class="action" bindtap="NavChange" data-cur="anli">
+		<view class='cuIcon-cu-image'>
+			<text class="cuIcon-album lg {{PageCur=='anli'?'text-green':'text-gray'}}"></text>
+		</view>
+		<view class="{{PageCur=='component'?'text-green':'text-gray'}}">案例</view>
+	</view>
+	<view class="action" bindtap="NavChange" data-cur="dontai">
+		<view class='cuIcon-cu-image'>
+			<text class="cuIcon-news lg {{PageCur=='dontai'?'text-green':'text-gray'}}"></text>
+		</view>
+		<view class="{{PageCur=='dontai'?'text-green':'text-gray'}}">动态</view>
+	</view>
+	<view class="action" bindtap="NavChange" data-cur="about">
+		<view class='cuIcon-cu-image'>
+			<text class="cuIcon-my lg {{PageCur=='about'?'text-green':'text-gray'}}"></text>
+		</view>
+		<view class="{{PageCur=='about'?'text-green':'text-gray'}}">关于</view>
+	</view>
+</view>

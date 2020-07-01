@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "shouye": "/pages/shouye/shouye",
+    "anli": "/pages/anli/anli",
+    "dontai": "/pages/dontai/dontai",
+    "about": "/pages/about/about"
+  }
+}

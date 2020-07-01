@@ -1,0 +1,62 @@
+<scroll-view scroll-y class="scrollPage">
+<swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+	<swiper-item wx:for="{{4}}" wx:key="key">
+		<image src="../../images/lunbo/index{{index+1}}.jpg" mode='aspectFill'></image>
+	</swiper-item>
+</swiper>
+<view class="youshi">
+	<view class="youshi-title">———— 恒荣盛锦<strong>4</strong>大优势 ————</view>
+	<view class="cu-card">
+    <view class="cu-item bg-img shadow-blur" style="background-image:url({{item.img}})"  wx:for="{{list}}" wx:key>
+      <view class="cardTitle">
+        {{item.title}}
+				<view class="small">{{item.neiron}}</view>
+      </view>
+			
+    </view>
+  </view>
+  
+</view>
+<view class=" bg-gradual-green shadow-blur text-center anli">
+	<view class="anlititle">———— 案例 ————</view>
+	<image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-black response" style="height:80rpx;margin-top:-40rpx; "></image>
+
+	<!--card1-->
+	<view class="cu-card case {{isCard?'no-card':''}}" wx:for="{{anlijson}}" wx:key="key">
+		<view class="cu-item shadow">
+			<view class="image">
+				<image src="{{item.img}}" mode="widthFix"></image>
+				<view class="cu-tag bg-blue">{{item.city}}</view>
+				<view class="cu-bar bg-shadeBottom">
+					<text class="text-cut">{{item.text}}</text>
+				</view>
+			</view>
+			<view class="cu-list menu-avatar">
+				<view class="cu-item">
+					<view class="cu-avatar round lg" style="background-image:url({{item.authorimg}});"></view>
+					<view class="content flex-sub">
+						<view class="text-grey">{{item.title}}</view>
+						<view class="text-gray text-sm flex justify-between">
+							设计师：{{item.author}}
+							<view class="text-gray text-sm">
+								<text class="cuIcon-attentionfill margin-lr-xs"></text> {{item.attentionfill}}
+								<text class="cuIcon-appreciatefill margin-lr-xs"></text> {{item.appreciatefill}}
+								<text class="cuIcon-messagefill margin-lr-xs"></text> {{item.messagefill}}
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!--card1-->
+
+</view>
+<view class=" bg-gradual-green shadow-blur text-center anli">
+	<view class="anlititle">———— 视频案例 ————</view>
+  <view class="">更多视频请腾讯视频搜索《强力设计》</view>
+	<image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-black response" style="height:80rpx;margin-top:-40rpx; "></image>
+  <video src="http://img.hrsjyl.com/video/wdhy.mp4" binderror="videoErrorCallback" title="屋顶花园设计案例"></video>
+</view>
+<view class="cu-tabbar-height"></view>
+</scroll-view>
